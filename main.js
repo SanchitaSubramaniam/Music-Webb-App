@@ -27,7 +27,7 @@ function setup() {
 }
 
 function modelLoaded() {
-    console.log('PoseNet Is Initia;ized');
+    console.log('PoseNet Is Initialized');
 }
 
 function draw() {
@@ -37,7 +37,11 @@ function draw() {
 function play()
 {
     song.play();
+    song.setVolume();
+    song.rate(1);
     song1.play();
+    song1.setVolume(1);
+    song1.rate(1);
 }
 
 function gotPoses(results)
